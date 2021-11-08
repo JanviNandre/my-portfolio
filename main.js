@@ -48,15 +48,15 @@ function addStar(){
 
 Array(200).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/jrncloud/image/upload/v1636392959/project/space_phgxqf.jpg');
 scene.background = spaceTexture;
 
-const avatarTexture = new THREE.TextureLoader().load('avatar.png');
+const avatarTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/jrncloud/image/upload/v1636392914/project/avatar_tdeqac.png');
 const avatar = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: avatarTexture }));
 scene.add(avatar)
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/jrncloud/image/upload/v1636392929/project/moon_yquy6d.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://res.cloudinary.com/jrncloud/image/upload/v1636392951/project/normal_bzaoqn.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
